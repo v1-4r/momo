@@ -1,0 +1,576 @@
+/* Com styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --dark: #000000;
+    --blue: #0088cc;
+    --white: #FFFFFF;
+    --white-20: rgba(255, 255, 255, 0.20);
+    --gridw: 1024px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background: var(--dark);
+    color: var(--white);
+}
+
+a:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 140px;
+    margin: 0px;
+}
+
+
+h2 {
+    font-size: 64px;
+    margin: 0px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+    p a {
+        color: var(--white);
+    }
+
+.wrap {
+    max-width: var(--gridw);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+
+.wrap-game {
+    max-width: var(--gridw);
+}
+
+.s-bg-wh {
+    background: var(--white);
+    color: var(--dark);
+}
+
+
+/* hero */
+
+.hero {
+    padding: 50px 20px;
+}
+
+.hero-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.hero-menu {
+    max-width: var(--gridw);
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 42px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.menu-links {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.menu-links a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.button-buy {
+    width: 170px;
+    height: 60px;
+    border-radius: 10px;
+    background: var(--blue);
+    border: black 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-ca {
+    font-size: 20px;
+    line-height: 22px;
+    background: var(--white-20);
+    padding: 5px 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: center;
+}
+
+.hero-ton {
+    width: 250px;
+    height: 250px;
+}
+
+
+.hero-content-info {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 34px;
+    text-align: end;
+}
+
+.hero-content-info i {
+    color: var(--blue);
+    font-weight: 1000;
+}
+
+
+.hero-soc {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    max-width: 1000px;
+}
+
+.hero-soc-item {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    gap: 10px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.wrap-p2e {
+    width: 100%;
+    margin: 50px 0;
+    text-align: center;
+
+}
+
+/* how to buy*/
+
+.howtobuy {
+    padding: 50px 0px;
+}
+
+.howtobuy h3 {
+    font-size: 40px;
+    line-height: 90%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.howtobuy p {
+    margin-top: 0;
+}
+
+.howtobuy-content {
+    grid-column-start: 2;
+    grid-column-end: span 6;
+}
+
+.howtobuy img {
+    grid-column-start: 8;
+    grid-column-end: span 4;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.howtobuy-wallet {
+    background: var(--white-20);
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: flex;
+    width: fit-content;
+    margin-bottom: 1em;
+}
+
+.howtobuy-wallet input {
+    font-family: inherit;
+    background: none;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: var(--white);
+    font-size: 22px;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    overflow: visible;
+    width: auto;
+}
+
+.howtobuy-wallet button {
+    font-family: inherit;
+    background: none;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: var(--white);
+    color: var(--dark);
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 8px;
+    padding: 0px 5px;
+}
+
+.howtobuy-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.howtobuy-links a, .getgems a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.howtobuy-links-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 26px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: var(--white-20);
+}
+
+.howtobuy-links-item img {
+    width: 34px;
+    height: 34px;
+}
+
+/* about */
+
+.about {
+    display: flex;
+    padding: 50px 0px;
+}
+
+.about img {
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    width: 100%;
+    height: auto;
+}
+
+.about-content {
+    grid-column-start: 8;
+    grid-column-end: span 4;
+}
+
+/* roadmap */
+
+.roadmap {
+    height: 1000px;
+    background-image: url(roadmap.png);
+    background-size: auto 100%;
+    background-position: 50% bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.roadmap-img {
+    height: 300px;
+    border-radius: 10px;
+}
+
+.roadmap .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roadmap-content {
+    display: flex;
+    font-size: 24px;
+}
+
+.roadmap-goal {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.roadmap-goal p {
+    max-width: 400px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.roadmap-content-list-marked {
+    text-decoration: line-through;
+}
+
+.roadmap-content-list ul {
+    list-style-type: none;
+    margin: 0;
+    width: 200px;
+    font-size: 18px;
+}
+
+.roadmap-content-list ul li {
+    margin-top: 3px;
+}
+
+    .roadmap-content-list ul li span{
+        font-size: 14px;
+    }
+
+.roadmap-content-title {
+    color: var(--dark);
+    margin-left: 20px;
+}
+
+.roadmap-art {
+    width: 256px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: calc(50% - 250px);
+}
+
+.fungame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 0px;
+    background: #564e47 url('../img/game-wrap-bg.png');
+}
+
+
+hr {
+    width: 100%;
+    height: 1px;
+    background: var(--gray);
+    margin: 0px;
+    border: none;
+    opacity: 0.33;
+}
+
+/* college */
+
+.collage {
+    height: 60vh;
+    background: url(asset-collage.png);
+    background-size: auto 100%;
+    background-position: 50% 50%;
+}
+
+/* prefooter*/
+
+.prefooter {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.prefooter-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--gridw);
+}
+
+
+/* footer */
+
+.footer {
+    background: var(--dark);
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 1024px;
+}
+
+/* media */
+
+@media (max-width: 1200px) {
+    .menu-links {
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1070px) {
+
+    .logo {
+        font-size: 36px;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .menu-links {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .prefooter-wrap {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    h2 {
+        font-size: 56px;
+    }
+
+    .wrap {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+    .wrap-game {
+        transform: scale(0.8);
+    }
+
+    .grid-adapt {
+        grid-column-start: 1 !important;
+        grid-column-end: span 1 !important;
+    }
+
+    .collage {
+        height: 30vh;
+    }
+
+    .hero-content {
+        transform: scale(0.65);
+    }
+
+    .hero-wrap {
+        gap: 20px;
+    }
+
+    .about, .howtobuy, .wallofmemes, .getgems {
+        padding: 20px 0px;
+    }
+}
+
+
+@media(max-width: 720px) {
+    .menu-lang-toggle {
+        order: -1;
+        flex-basis: 100%;
+    }
+
+    .wrap-game {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 520px) {
+    h2 {
+        font-size: 48px;
+    }
+
+    .wrap-game {
+        transform: scale(0.6);
+    }
+
+    .hero-content {
+        transform: scale(0.45);
+    }
+
+    .wallofmemes {
+        padding: 20px;
+    }
+
+    .memecard {
+        gap: 10px;
+    }
+
+    .memecard-ava {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .collage {
+        height: 25vh;
+    }
+
+    .wrap-game {
+        transform: scale(0.5);
+    }
+}
