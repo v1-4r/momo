@@ -280,7 +280,7 @@ p {
     margin-top: 50px;
 }
 
-.howtobuy-links a, .getgems a {
+.howtobuy-links a{
     color: inherit;
     text-decoration: none;
 }
@@ -298,6 +298,30 @@ p {
 .howtobuy-links-item img {
     width: 34px;
     height: 34px;
+}
+
+.howtoplay-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    margin: 20px;
+    justify-content: center;
+}
+
+    .howtoplay-links a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+.howtoplay-links-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 52px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: var(--white-20);
 }
 
 /* about */
