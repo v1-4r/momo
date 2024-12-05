@@ -459,7 +459,7 @@ hr {
 .prefooter-wrap {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: var(--gridw);
 }
 
