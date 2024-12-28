@@ -5,8 +5,9 @@ html {
 }
 
 :root {
-    --dark: #000000;
-    --blue: #0088cc;
+    --dark: #000000e3;
+    --coral: #e15968;
+    --coral-text: #ff6374;
     --white: #FFFFFF;
     --white-20: rgba(255, 255, 255, 0.20);
     --gridw: 1024px;
@@ -22,10 +23,8 @@ body {
     color: var(--white);
 }
 
-
-
 a:hover {
-    opacity: 0.7;
+    opacity: 0.8;
     cursor: pointer;
 }
 
@@ -128,8 +127,7 @@ p {
     width: 170px;
     height: 60px;
     border-radius: 10px;
-    background: var(--blue);
-    border: black 3px solid;
+    background: var(--coral);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,6 +161,23 @@ p {
     height: 250px;
 }
 
+.hero-slogan {
+    color: var(--coral-text);
+    display: block;
+}
+
+.hero-slogan-line1 {
+    text-align: left;
+}
+
+.hero-slogan-line2 {
+    text-align: center;
+}
+
+.hero-slogan-line3 {
+    text-align: right;
+}
+
 
 .hero-content-info {
     display: flex;
@@ -171,12 +186,6 @@ p {
     font-size: 34px;
     text-align: end;
 }
-
-.hero-content-info i {
-    color: var(--blue);
-    font-weight: 1000;
-}
-
 
 .hero-soc {
     display: flex;
@@ -231,6 +240,8 @@ p {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    position: sticky;
+    top: 20px;
 }
 
 .howtobuy-wallet {
@@ -292,7 +303,7 @@ p {
     font-size: 26px;
     padding: 5px 10px;
     border-radius: 8px;
-    background: var(--white-20);
+    background: var(--coral);
 }
 
 .howtobuy-links-item img {
@@ -321,7 +332,7 @@ p {
     font-size: 52px;
     padding: 5px 10px;
     border-radius: 8px;
-    background: var(--white-20);
+    background: var(--coral);
 }
 
 /* about */
